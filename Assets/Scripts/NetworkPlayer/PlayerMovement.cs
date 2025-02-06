@@ -33,7 +33,7 @@ namespace NetworkPlayer {
             if(!IsSpawned) return;
             if(!IsOwner) return;
             Vector3 direction = new Vector3(_movementInput.x, 0, _movementInput.y);
-            transform.Translate(direction * speed * Time.deltaTime, Space.World);
+            transform.Translate(direction * (speed * Time.deltaTime), Space.World);
         }
 
         private void OnMovePerformed(InputAction.CallbackContext context) {

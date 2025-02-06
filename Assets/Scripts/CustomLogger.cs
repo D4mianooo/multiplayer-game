@@ -7,12 +7,15 @@ using TMPro;
 using UnityEngine;
 
 public class CustomLogger : MonoBehaviour {
-    [SerializeField] private TMP_Text _textComponent;
-
+    private MyConsole _console;
     private IConverter<LogType, Color> _logTypeToColorConverter;
 
-    private void OnEnable() {
+    private void Awake() {
+        _console = GetComponent<MyConsole>();
         _logTypeToColorConverter = new LogTypeToColorConverter();
+    }
+
+    private void OnEnable() {
         Application.logMessageReceived += HandleLog;
     }
 
@@ -23,9 +26,11 @@ public class CustomLogger : MonoBehaviour {
     private void HandleLog(string logString, string stackTrace, LogType type) {
         Color logColor = _logTypeToColorConverter.ConvertFrom(type);
         string hexColor = ColorUtility.ToHtmlStringRGBA(logColor);
-        string trimLogString = logString.Replace("\n", string.Empty);
         DateTime timestamp = DateTime.Now.ToLocalTime();
 
-        _textComponent.text += $"<color=#{hexColor}>[{timestamp:hh:mm:ss}] [{type}] {trimLogString}</color>\n";
+        string msg =  $"<color=#{hexColor}>[{timestamp:hh:mm:ss}] [{type}] {logString}</color>";
+        _console.Print(msg);
     }
+
+
 }
