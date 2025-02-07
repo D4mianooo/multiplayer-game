@@ -348,21 +348,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4659671068929105773, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_margin.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659671068929105773, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_fontStyle
+    - target: {fileID: 4569673027491358242, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4659671068929105773, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_lineSpacing
-      value: 0
+    - target: {fileID: 4569673027491358242, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetUserInput
       objectReference: {fileID: 0}
-    - target: {fileID: 4659671068929105773, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_characterSpacing
-      value: 10
+    - target: {fileID: 4569673027491358242, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ConsoleUserInput, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4569673027491358242, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5038242032815386571, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
       propertyPath: m_Pivot.x
@@ -444,25 +444,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6227734913385209602, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_margin.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7047081061059585287, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7295957053369528306, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
       propertyPath: m_Name
       value: Console
-      objectReference: {fileID: 0}
-    - target: {fileID: 7927563069333332614, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_margin.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7927563069333332614, guid: 7969d820a3798b84d8257962982aea2a, type: 3}
-      propertyPath: m_margin.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
